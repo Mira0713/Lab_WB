@@ -1,0 +1,26 @@
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 24px;
+  margin: 0 auto;
+  width: 100%;
+}
+table tr td,
+th {
+  padding: 8px;
+  font-weight: normal;
+  border: 1px solid black;
+}
+body {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+}
+.posada {
+  text-align: right !important;
+}

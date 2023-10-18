@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="help.css" />
+    <link rel="stylesheet" href="globalStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,900;1,6..12,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="help.js" defer></script>
+  </head>
+  <body style="max-width: 1020px; width: 100%; margin: 0 auto">
+    <header>
+      <nav class="header-navigation">
+        <hr />
+        <a href="index.html" class="header-title">На головну</a>
+        <a href="sport.html" class="header-title">Спорт</a>
+        <a href="food.html" class="header-title">Харчування</a>
+        <a href="resume.html" class="header-title">Резюме</a>
+        <a href="help.html" class="header-title active">Допомога</a>
+        <a href="https://zp.edu.ua/" class="header-title">НУЗП</a>
+        <hr />
+      </nav>
+      <h1>
+        <center>Консультація</center>
+      </h1>
+    </header>
+    <main>
+      <div class="modal-window">
+        <div class="overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+          <div class="close" onclick="closeModal()">X</div>
+          <h2>Форма:</h2>
+          <div class="form-text"></div>
+          <div class="form-text"></div>
+          <div class="form-text"></div>
+          <div class="form-text"></div>
+          <div class="form-text"></div>
+        </div>
+      </div>
+      <h2>
+        Ми розуміємо, наскільки важливо мати доступ до корисної інформації і
+        підтримки, коли розглядаєте питання здоров'я, фітнесу, питань психічного
+        благополуччя, або будь-які інші теми, що цікавлять вас. Тому ми
+        пропонуємо можливість консультації з нашою командою професіоналів, які
+        готові вам допомогти.
+      </h2>
+      <br />
+      <h1>Як Ми Вас Підтримаємо:</h1>
+      <div class="container">
+        <div class="column">
+          <h3>Онлайн-консультації:</h3>
+          <p>
+            Ми надаємо можливість звернутися до наших експертів через
+            онлайн-консультації. Ви зможете отримати відповіді на ваші запитання
+            та конкретні поради, не покидаючи зручності вашого дому.
+          </p>
+        </div>
+        <div class="column">
+          <h3>Контактний формуляр:</h3>
+          <p>
+            Ви можете зв'язатися з нами через контактний формуляр на цій
+            сторінці, і наша команда відповість вам якнайшвидше.
+          </p>
+        </div>
+        <div class="column">
+          <h3>Ресурси і Поради:</h3>
+          <p>
+            Поза особистими консультаціями, ми також надаємо корисні статті,
+            поради та рекомендації на нашому веб-сайті, що можуть бути вам в
+            нагоді.
+          </p>
+        </div>
+      </div>
+      <h1>Записатись на консультацію :</h1>
+    </main>
+    <div class="forms">
+      <form id="myForm">
+        <img src="images/help2.png" width="150" height="150" alt="" />
+        <br />
+        <label for="first_name">Ім'я:</label>
+        <input type="text" id="first_name" name="first_name" required />
+        <br />
+        <br />
+        <label for="last_name">Прізвище:</label>
+        <input type="text" id="last_name" name="last_name" required />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <br />
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" maxlength="15" required />
+        <!-- <br />
+        <br /> -->
+        <!-- <label for="gender">Стать:</label>
+        <select id="gender" name="gender">
+          <option value="male">Чоловік</option>
+          <option value="female">Жінка</option>
+          <option value="other">Інше</option>
+        </select> -->
+        <br />
+        <br />
+        <label for="age">Вік:</label>
+        <input type="number" id="age" name="age" required />
+        <br />
+        <br />
+        <input type="submit" value="Відправити" />
+        <br />
+        <br />
+      </form>
+    </div>
+
+    <footer>
+      <a href="resume.html">Резюме</a>
+      <p>©2023 Здорова допомога. Усі права захищено.</p>
+    </footer>
+  </body>
+</html>
